@@ -1,6 +1,6 @@
 import setuptools
 
-description = "ezmemes - Async wrapper for Python to easily request memes."
+description = "ezmemes - Sync/Async wrapper for Python to easily request memes."
 long_description = open("README.md").read()
 version="1.0.0"
 
@@ -17,5 +17,5 @@ setuptools.setup(
     license='MIT',
     packages=packages,
     include_package_data=True,
-    install_requires=['aiohttp>=2.0.0']
+    install_requires=['aiohttp>=2.0.0', 'requests>=2.0.0']
 )
