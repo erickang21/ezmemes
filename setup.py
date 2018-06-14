@@ -12,7 +12,7 @@ setuptools.setup(
     description=description,
     long_description=long_description,
     url='https://github.com/bananaboy21/ezmemes',
-    author='dat banana boi',
+    author='Eric Kang',
     author_email='kang.eric.hi@gmail.com',
     license='MIT',
     packages=packages,
