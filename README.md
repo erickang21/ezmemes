@@ -41,4 +41,4 @@ image_url | url (str): The URL of the image.
 title | name (str): The title of the image. Great for a short descriptive text of your meme.
 thumbsup (int): The number of thumbs up that the meme got on Reddit.
 thumbsdown (int): The number of thumbs down that the meme got on Reddit.
-subreddit (str): THe subreddit that the meme came from.
+subreddit (str): The subreddit that the meme came from.
