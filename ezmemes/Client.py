@@ -42,9 +42,9 @@ class Client:
             r = None
             if self.is_async:
                 r = await self.session.get(f"https://api.reddit.com/u/kerdaloo/m/dankmemer/top/.json?sort=top&t=day&limit={str(limit)}")
-                r = await r.json()
             else:
                 r = self.session.get(f"https://api.reddit.com/u/kerdaloo/m/dankmemer/top/.json?sort=top&t=day&limit={str(limit)}")
+            r = await r.json()
             meme_pos = position or random.randint(0, len(r['data']['children']) - 1)
             meme = r['data']['children'][meme_pos]['data']
             meme_img = meme['preview']['images'][0]['source']['url']
