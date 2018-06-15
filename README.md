@@ -5,16 +5,19 @@ High-quality meme APIs aren't easy to find, so this will grab memes from Reddit 
 
 It can be used in both Sync (Requests) and Asnyc (Aiohttp).
 
-**Getting Started**
+## Getting Started
+
 Run this on your command prompt:
 `pip install git+https://github.com/bananaboy21/ezmemes`
 (PyPi coming soon)
 
-**Updating to new versions**
+## Updating to new versions
+
 Run this on your command prompt:
 `pip install -U https://github.com/bananaboy21/ezmemes`
 
-**Example Usage**
+## Example Usage
+
 ```py
 import ezmemes
 
@@ -23,9 +26,10 @@ memey_stuff_of_life = ezmemes.Client(is_async=True)
 await memey_stuff_of_life.get_meme()
 ```
 
-**Endpoints**
+## Endpoints
+
 `async def get_meme(self, limit=500, position=None)`
-Gets a meme from Reddit.
+> Gets a meme from Reddit.
 
 Params:
 limit (int):
